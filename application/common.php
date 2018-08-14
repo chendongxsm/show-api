@@ -32,7 +32,7 @@ function search_word($str)
  */
 function ok_data($msg = '操作成功')
 {
-    return json(['error' => 0, 'msg' => $msg]);
+    return json(['errno' => 1, 'msg' => $msg]);
 }
 
 /**
@@ -41,7 +41,7 @@ function ok_data($msg = '操作成功')
  */
 function error_data($msg = '操作失败')
 {
-    return json(['error' => 1, 'msg' => $msg]);
+    return json(['errno' => 0, 'msg' => $msg]);
 }
 
 /**

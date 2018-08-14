@@ -18,6 +18,6 @@ class User extends Controller
      * @return \think\response\Json
      */
     public function getCode(){
-        return json('098067');
+        return ok_data('验证码发送成功');
     }
 }
